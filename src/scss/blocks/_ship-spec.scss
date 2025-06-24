@@ -1,4 +1,6 @@
 .ship-spec {
+  position: relative;
+  width: 52.6rem;
   margin-top: auto;
   margin-left: auto;
   padding: 3rem 3.5rem 3.5rem 3.5rem;
@@ -24,12 +26,18 @@
   }
 
   &__img {
-    display: flex;
-    align-items: flex-start;
-    justify-self: end;
-    margin-left: -70px;
-    padding-top: 45px;
+    position: absolute;
+    right: 3.5rem;
+    bottom: 6.75rem;
   }
+
+  // &__img {
+  //   display: flex;
+  //   align-items: flex-start;
+  //   justify-self: end;
+  //   margin-left: -70px;
+  //   padding-top: 45px;
+  // }
 
   &__list {
     max-width: 32rem;
