@@ -1,0 +1,49 @@
+.projects {
+  height: 101rem;
+  background: rgba(19, 61, 141, 0.5);
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12rem;
+  }
+
+  &__title {
+    color: var(--color-white);
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  &__link {
+    color: var(--color-white);
+  }
+
+  &__body {
+    padding-top: 8rem;
+    display: flex;
+
+    &-main {
+      position: relative;
+      z-index: 1;
+      width: 70.6rem;
+      height: 60rem;
+    }
+
+    &-img {
+      position: absolute;
+      z-index: -1;
+      object-fit: cover;
+      pointer-events: none;
+    }
+
+    &-info {
+      color: green;
+      width: 46.8rem;
+    }
+  }
+}
