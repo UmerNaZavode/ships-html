@@ -1,4 +1,5 @@
 .projects {
+  // position: relative;
   height: 101rem;
   background: rgba(19, 61, 141, 0.5);
 
@@ -24,11 +25,12 @@
   }
 
   &__body {
+    // position: relative;
     padding-top: 8rem;
     display: flex;
 
     &-main {
-      position: relative;
+      // position: relative;
       z-index: 1;
       width: 70.6rem;
       height: 60rem;
@@ -37,13 +39,34 @@
     &-img {
       position: absolute;
       z-index: -1;
+      width: 70.6rem;
+      height: 60rem;
       object-fit: cover;
       pointer-events: none;
     }
 
     &-info {
-      color: green;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
       width: 46.8rem;
+      color: var(--color-white);
+    }
+
+    // TODO: ti fix div pos on photo
+
+    &-title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 140%;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    &-description {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
     }
   }
 }
