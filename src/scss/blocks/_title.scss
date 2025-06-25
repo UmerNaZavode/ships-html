@@ -5,6 +5,10 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
+  &--alt {
+    color: var(--color-white);
+  }
+
   &--link {
     font-weight: 700;
     font-size: 18px;

@@ -1,0 +1,63 @@
+.history {
+  background-color: var(--color-blue);
+
+  &__title {
+    padding-top: 12rem;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+  }
+
+  &__description {
+    max-width: 52.6rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 140%;
+    color: var(--color-white);
+  }
+
+  &__path {
+
+    &-info {
+      padding-left: 4.5rem;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      padding-top: 1.5rem;
+      padding-bottom: 4.5rem;
+      gap: 1rem;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 140%;
+      color: var(--color-white);
+    }
+
+    &-item {
+      position: relative;
+      padding-left: 2rem;
+    }
+
+    &-item::before {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0.8rem;
+      height: 0.8rem;
+      background: var(--color-white);
+    }
+  }
+}
