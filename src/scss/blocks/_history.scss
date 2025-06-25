@@ -8,7 +8,6 @@
   &__body {
     display: flex;
     justify-content: space-between;
-    padding-top: 4rem;
   }
 
   &__description {
@@ -18,6 +17,7 @@
   &__info {
     display: flex;
     flex-direction: column;
+    padding-top: 4rem;
     gap: 2.4rem;
     font-weight: 400;
     font-size: 1.4rem;
@@ -26,6 +26,7 @@
   }
 
   &__path {
+    padding-top: 2.1rem;
 
     &-info {
       padding-left: 4.5rem;
