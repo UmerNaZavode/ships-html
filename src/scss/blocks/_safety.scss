@@ -1,15 +1,9 @@
 .safety {
-  &__inner {
-    position: relative;
-    padding: 15rem 0;
-  }
-
-  //
-  &__navigation {
-    position: absolute;
+  &____wrapper {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    padding-block: 15rem;
+    gap: 5rem;
   }
 }
 
-// TODO: Выяснить как поставить стрелочки между блоком с информацией
