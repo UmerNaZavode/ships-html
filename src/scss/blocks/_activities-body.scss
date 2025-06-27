@@ -1,0 +1,49 @@
+.activities-body {
+  display: flex;
+  justify-content: space-between;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    width: 74.6rem;
+  }
+
+  &__comment {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 66.6rem;
+    gap: 2.4rem;
+    padding-left: 4rem;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    border-left: 0.3rem solid var(--color-red);
+  }
+
+  &__product {
+    display: flex;
+    flex-direction: column;
+    width: 66.6rem;
+    gap: 6rem;
+  }
+
+  &__title {
+    padding-bottom: 3rem;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
