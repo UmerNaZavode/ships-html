@@ -1,0 +1,32 @@
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  width: 30.6rem;
+  gap: 3rem;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__address {
+    text-align: right;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 140%;
+  }
+
+  &__info {
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+
+    * {
+      gap: 1.1rem;
+    }
+  }
+}
