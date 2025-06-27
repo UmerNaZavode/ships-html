@@ -1,0 +1,18 @@
+.header-main {
+  padding-top: 3rem;
+
+  // &__menu {}
+
+  &__list {
+    display: flex;
+    gap: 10.68rem;
+  }
+
+  &__list {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,15 @@
+.header-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 3rem;
+  border-bottom: solid 0.1rem;
+
+  &__list {
+    display: flex;
+    gap: 5rem;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+  }
+}

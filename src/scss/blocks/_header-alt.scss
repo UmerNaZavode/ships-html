@@ -1,5 +1,9 @@
 .header-alt {
+  color: var(--color-white);
   background-color: var(--color-blue);
 
-  &__inner {}
+  &__inner {
+
+    padding-block: 2.5rem 3rem;
+  }
 }
