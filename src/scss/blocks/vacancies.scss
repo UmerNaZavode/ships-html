@@ -1,0 +1,51 @@
+.vacancies-body {
+
+
+  &__title {
+    margin-top: 6rem;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  &__card {
+    padding: 35px 40px;
+    border: 1px solid rgba(51, 51, 51, 0.3);
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.4rem;
+    margin-top: 4.5rem;
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    display: flex;
+    margin-block: 2.5rem;
+    gap: 1.5rem;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  &__button {
+    padding: 10px 15px 9px 15px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 140%;
+    color: var(--color-white);
+    border: none;
+    background: var(--color-blue);
+  }
+}

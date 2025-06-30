@@ -1,0 +1,18 @@
+.vacancies {
+  &__inner {
+    margin-block: 9rem 15rem;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  &__pages {
+    margin-top: 6rem;
+    padding-bottom: 0;
+  }
+}
