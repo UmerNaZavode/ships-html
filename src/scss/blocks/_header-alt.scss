@@ -2,6 +2,10 @@
   color: var(--color-white);
   background-color: var(--color-blue);
 
+  &.header-alt--home {
+    background: transparent;
+  }
+
   &__inner {
 
     padding-block: 2.5rem 3rem;
