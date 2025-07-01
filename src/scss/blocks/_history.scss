@@ -3,11 +3,19 @@
 
   &__title {
     padding-top: 12rem;
+
+    @media screen and (max-width: 992px) {
+      padding-top: 7rem;
+    }
   }
 
   &__body {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+    }
   }
 
   &__description {

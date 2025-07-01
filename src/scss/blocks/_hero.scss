@@ -4,8 +4,17 @@
   display: flex;
   padding-bottom: 10rem;
 
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
   &__body-inner {
     padding-top: 12rem;
+
+    @media screen and (max-width: 768px) {
+      padding-top: 6rem;
+    }
   }
 
   &__body-title {
@@ -13,6 +22,12 @@
     font-size: 6rem;
     line-height: 140%;
     padding-bottom: 3rem;
+
+
+    @media screen and (max-width: 768px) {
+      font-size: 5rem;
+      padding-bottom: 2rem;
+    }
   }
 
   &__body-info {
@@ -26,9 +41,17 @@
       padding-left: 3rem;
       border-left: 0.2rem solid var(--color-white);
     }
+
+    @media screen and (max-width: 768px) {
+      padding-bottom: 2rem;
+    }
   }
 
   &__button {
     margin-bottom: 13rem;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 7rem;
+    }
   }
 }

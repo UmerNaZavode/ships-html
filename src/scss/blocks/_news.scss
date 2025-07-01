@@ -1,9 +1,16 @@
 .news {
-
   line-height: 140%;
 
   &__main {
     padding-block: 13.7rem 16rem;
+
+    @media screen and (max-width: 1200px) {
+      padding-block: 7rem 8rem;
+    }
+
+    @media screen and (max-width: 992px) {
+      padding-block: 5rem 6rem;
+    }
   }
 
   &__header {
@@ -11,12 +18,31 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (max-width: 1200px) {
+      padding-bottom: 7rem;
+    }
+
+    @media screen and (max-width: 992px) {
+      padding-bottom: 5rem;
+    }
   }
 
   &__list {
     display: flex;
     justify-content: space-between;
     gap: 2.4rem;
+
+    @media screen and (max-width: 992px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 2rem;
+      place-items: center;
+    }
+
+    @media screen and (max-width: 576px) {
+      column-gap: 4rem;
+    }
   }
 
   &__item {

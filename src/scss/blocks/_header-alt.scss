@@ -7,7 +7,10 @@
   }
 
   &__inner {
-
     padding-block: 2.5rem 3rem;
+
+    @media screen and (max-width: 768px) {
+      padding-block: 2.5rem 0;
+    }
   }
 }

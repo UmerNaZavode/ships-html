@@ -2,6 +2,18 @@
 
   &__main {
     padding-block: 15rem 20.6rem;
+
+    @media screen and (max-width: 1200px) {
+      padding-block: 10rem 15rem;
+    }
+
+    @media screen and (max-width: 992px) {
+      padding-block: 8rem 12rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding-block: 6rem 10rem;
+    }
   }
 
   &__header {
@@ -10,15 +22,26 @@
     justify-content: space-between;
   }
 
-  &__body {
-    padding-top: 10rem;
-  }
-
   &__list {
     display: flex;
     justify-content: space-between;
-    padding-top: 3rem;
-    gap: 2.4rem;
+    margin-top: 10rem;
+
+    @media screen and (max-width: 1200px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 2rem;
+      place-items: center;
+      margin-top: 8rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-top: 6rem;
+    }
+
+    @media screen and (max-width: 576px) {
+      column-gap: 4rem;
+    }
   }
 
   &__item {
@@ -27,11 +50,6 @@
     width: 30.6rem;
     gap: 2rem;
     color: var(--color-black);
-
-    &-img {
-      width: 30.6rem;
-      height: 26rem;
-    }
 
     &-date {
       font-weight: 400;
