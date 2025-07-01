@@ -1,4 +1,6 @@
 .header-info {
+  position: relative;
+  z-index: 10001;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,5 +13,10 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 140%;
+
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 }

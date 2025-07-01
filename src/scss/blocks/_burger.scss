@@ -1,0 +1,10 @@
+.burger {
+  display: none;
+  width: 2rem;
+  fill: white;
+
+
+  @media screen and (max-width: 992px) {
+    display: block;
+  }
+}

@@ -1,4 +1,11 @@
 .search {
+
+
+  @media screen and (max-width: 768px) {
+    margin-left: auto;
+    margin-right: 3rem;
+  }
+
   &__button {
     border: none;
     background: none;

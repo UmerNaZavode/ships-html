@@ -10,4 +10,11 @@ document.addEventListener("DOMContentLoaded", function() {
     header.classList.add("header-alt--home")
   }
   console.log(current_url)
+
+  const burger = document.querySelector(".burger")
+  const menu = document.querySelector(".header-main")
+  burger.addEventListener("click", function() {
+    menu.classList.toggle("active")
+  })
 });
+
