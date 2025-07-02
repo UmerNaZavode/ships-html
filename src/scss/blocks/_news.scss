@@ -26,6 +26,10 @@
     @media screen and (max-width: 992px) {
       padding-bottom: 5rem;
     }
+
+    @media screen and (max-width: 768px) {
+      padding-bottom: 3rem;
+    }
   }
 
   &__list {
@@ -41,7 +45,8 @@
     }
 
     @media screen and (max-width: 576px) {
-      column-gap: 4rem;
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 1rem;
     }
   }
 
