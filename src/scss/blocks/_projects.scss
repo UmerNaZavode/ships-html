@@ -34,10 +34,8 @@
       align-items: center;
     }
 
-    // TODO: find out why absolute pos in this case looks horrible 
-
     &-main {
-      // position: relative;
+      position: relative;
       display: flex;
       flex-direction: column;
       z-index: 1;
@@ -54,7 +52,7 @@
     }
 
     &-img {
-      position: relative;
+      position: absolute;
       z-index: -1;
       width: 70.6rem;
       height: 60rem;
@@ -63,12 +61,11 @@
     }
 
     &-info {
-      position: absolute;
-      bottom: 4.5rem;
-      left: 4.5rem;
+      position: relative;
       display: flex;
       flex-direction: column;
       z-index: 2;
+      margin: auto auto 4.5rem 4.5rem;
       gap: 2rem;
       max-width: 46.8rem;
       color: var(--color-white);
