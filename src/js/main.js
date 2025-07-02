@@ -1,5 +1,6 @@
 import './../scss/style.scss'
 import headerStyles from './modules/headerStyles';
+import heroSlider from './modules/heroSlider';
 import mapTabs from './modules/mapTabs';
 import toggleMenu from './modules/toggleMenu';
 
@@ -15,4 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
     mapTabs()
   }
 
+  const hero_section = document.querySelector(".hero-section")
+  if (hero_section) {
+    heroSlider()
+  }
 });
