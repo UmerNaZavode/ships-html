@@ -35,7 +35,7 @@
 
   &__body {
     position: relative;
-    display: flex;
+    display: flex !important;
     margin-top: 8rem;
 
     @media screen and (max-width: 992px) {
