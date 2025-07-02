@@ -15,5 +15,4 @@ export default function mapTabs() {
       iframe.setAttribute("src", sources[index])
     });
   });
-
 }
