@@ -8,17 +8,24 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    text-align: right;
+
+    @media screen and (max-width: 768px) {
+      text-align: left;
+    }
+
+    @media screen and (max-width: 576px) {
+      text-align: center;
+    }
   }
 
   &__address {
-    text-align: right;
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 140%;
   }
 
   &__info {
-    text-align: right;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.4rem;
