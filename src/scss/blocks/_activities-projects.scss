@@ -1,8 +1,12 @@
 .activities-projects {
-  width: 52.4rem;
+  max-width: 52.4rem;
   height: 62rem;
   color: var(--color-white);
   background-color: var(--color-blue);
+
+  @media screen and (max-width: 1200px) {
+    height: 66rem;
+  }
 
   &__spec {
     padding-block: 5rem 6rem;
@@ -23,6 +27,11 @@
     grid-template-columns: repeat(2, 1fr);
     row-gap: 3.5rem;
     column-gap: 4.4rem;
+
+    @media screen and (max-width: 1200px) {
+      row-gap: 3rem;
+      column-gap: 4rem;
+    }
   }
 
   &__item {
@@ -32,9 +41,14 @@
 
   &__value {
     font-weight: 900;
-    font-size: 64px;
+    font-size: 6.4rem;
     line-height: 140%;
     text-transform: uppercase;
+
+    @media screen and (max-width: 1200px) {
+      font-weight: 700;
+      font-size: 5rem;
+    }
   }
 
   &__key {
