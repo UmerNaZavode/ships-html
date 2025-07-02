@@ -7,6 +7,10 @@
     @media screen and (max-width: 992px) {
       padding-top: 7rem;
     }
+
+    @media screen and (max-width: 768px) {
+      padding-top: 3rem;
+    }
   }
 
   &__body {
@@ -31,6 +35,10 @@
     font-size: 1.4rem;
     line-height: 140%;
     color: var(--color-white);
+
+    @media screen and (max-width: 768px) {
+      padding-top: 3rem;
+    }
   }
 
   &__path {
