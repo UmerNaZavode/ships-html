@@ -4,7 +4,7 @@
   grid-template-columns: 1fr auto;
   align-items: start;
   gap: 2rem;
-  width: 52.6rem;
+  max-width: 52.6rem;
   margin-top: auto;
   margin-left: auto;
   padding: 3rem 3.5rem 3.5rem 3.5rem;
@@ -13,10 +13,10 @@
 
   @media screen and (max-width: 768px) {
     margin-top: 7rem;
-    // margin-left: 0;
   }
 
   @media screen and (max-width: 576px) {
+    margin-top: 5rem;
     margin-left: 0;
   }
 
@@ -38,7 +38,16 @@
   &__img {
     position: absolute;
     right: 3.5rem;
-    bottom: 6.75rem;
+    bottom: 8rem;
+
+    @media screen and (max-width: 1200px) {
+      width: 18rem;
+    }
+
+    @media screen and (max-width: 576px) {
+      width: 16rem;
+      right: 2rem;
+    }
   }
 
   &__list {
