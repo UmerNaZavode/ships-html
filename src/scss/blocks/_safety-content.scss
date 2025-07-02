@@ -4,7 +4,7 @@
   background: rgba(19, 61, 141, 0.15);
 
   &__body {
-    display: flex;
+    display: flex !important;
     gap: 6rem;
     padding: 6rem;
 
