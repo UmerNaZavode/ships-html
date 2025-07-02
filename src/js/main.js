@@ -1,20 +1,18 @@
 import './../scss/style.scss'
+import headerStyles from './modules/headerStyles';
+import mapTabs from './modules/mapTabs';
+import toggleMenu from './modules/toggleMenu';
 
 document.addEventListener("DOMContentLoaded", function() {
   // const header = document.queryselector
-  const header = document.querySelector(".header-alt")
-  console.log(header)
 
-  const current_url = window.location.pathname
-  if (current_url === "/") {
-    header.classList.add("header-alt--home")
+  headerStyles()
+
+  toggleMenu()
+
+  const contact_informations_btn = document.querySelector(".contact-informations__button");
+  if (contact_informations_btn) {
+    mapTabs()
   }
-  console.log(current_url)
 
-  const burger = document.querySelector(".burger")
-  const menu = document.querySelector(".header-main")
-  burger.addEventListener("click", function() {
-    menu.classList.toggle("active")
-  })
 });
-
