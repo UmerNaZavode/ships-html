@@ -7,10 +7,14 @@
     display: flex;
     gap: 6rem;
     padding: 6rem;
-  }
 
-  &__info {
-    max-width: 43.6rem;
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 992px) {
+      gap: 4rem;
+    }
   }
 
   &__subtitle {
@@ -42,11 +46,15 @@
 
   &__item {
     position: relative;
-    max-width: 41.6rem;
+    // max-width: 41.6rem;
     padding-left: 2.1rem;
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 140%;
+
+    @media screen and (max-width: 1200px) {
+      max-width: 58rem;
+    }
   }
 
   &__item::before {
@@ -59,8 +67,8 @@
     background: var(--color-red);
   }
 
-  &__img {
-    width: 480px;
-    height: 410px;
-  }
+  // &__img {
+  //   width: 480px;
+  //   height: 410px;
+  // }
 }

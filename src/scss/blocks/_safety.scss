@@ -4,5 +4,13 @@
     align-items: center;
     padding-block: 15rem;
     gap: 5rem;
+
+    @media screen and (max-width: 1200px) {
+      padding-block: 8rem;
+    }
+
+    @media screen and (max-width: 992px) {
+      padding-block: 6rem;
+    }
   }
 }
