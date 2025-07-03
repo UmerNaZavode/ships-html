@@ -1,7 +1,9 @@
 .header-main {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding-top: 3rem;
+  z-index: 1;
 
   @media screen and (max-width: 992px) {
     position: fixed;
